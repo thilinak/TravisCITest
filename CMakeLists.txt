@@ -32,12 +32,12 @@ if(CMAKE_VERSION VERSION_LESS 2.8.11)
 
 endif()
 
-SET(COVERAGE OFF CACHE BOOL "Coverage")
+#SET(COVERAGE OFF CACHE BOOL "Coverage")
 
-if (COVERAGE)
-	target_compile_options(tests PRIVATE --coverage)
-	target_link_libraries(tests PRIVATE --coverage)
-endif()
+#if (COVERAGE)
+#	target_compile_options(tests PRIVATE --coverage)
+#	target_link_libraries(tests PRIVATE --coverage)
+#endif()
 
 # Now simply link your own targets against gtest, gmock,
 # etc. as appropriate
