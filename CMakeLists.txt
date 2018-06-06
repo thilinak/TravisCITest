@@ -7,4 +7,3 @@ else()
 endif()
 
 add_executable(intro Main.cpp)
-target_compile_features(intro PRIVATE cxx_lambda_init_captures)
