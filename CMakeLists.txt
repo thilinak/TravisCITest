@@ -39,6 +39,8 @@ if (COVERAGE)
 	target_link_libraries(tests PRIVATE --coverage)
 endif()
 
+set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "tests")
+
 # Now simply link your own targets against gtest, gmock,
 # etc. as appropriate
 add_executable(intro Main.cpp)
